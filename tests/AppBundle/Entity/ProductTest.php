@@ -25,7 +25,7 @@ class ProductTest extends \PHPUnit_Framework_TestCase
 
     public function testNegativePriceComputeTVA()
     {
-        $product = new Product('Un produit', Product::FOOD_PRODUCT, -20);
+        $product = new Product('Un produits', Product::FOOD_PRODUCT, -20);
 
         $this->expectException('LogicException');
 
